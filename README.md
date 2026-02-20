@@ -1,4 +1,4 @@
-A custom IDS taht captures my network traffic and provides security summaries for me.
+A custom IDS that captures my network traffic and provides security summaries for me.
 
 #Tech stack below
 
